@@ -6,14 +6,14 @@ import MockContent from "./online/Mock";
 import StudyContent from "./online/Study";
 import PreviousContent from "./online/Previous";
 import CounselingContent from "./online/counseling";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
 import "./index.css";
-
+import Navbar from "./Navbar";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* <OnlineContent /> */}
-    {/* <MockContent /> */}
-    {/* <StudyContent /> */}
-    {/* <PreviousContent /> */}
-    <CounselingContent />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
