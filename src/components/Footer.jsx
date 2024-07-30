@@ -86,7 +86,7 @@ const Footer = () => {
                   <a href="#">Terms of Service</a>
                 </li>
                 <li>
-                  <a href="#">Write to Us?</a>
+                  <a href="/Contact">Write to Us?</a>
                 </li>
               </ul>
             </div>

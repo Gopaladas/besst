@@ -1,144 +1,156 @@
-import React from "react";
-import one from "./gunjan.svg";
-import three from "./blog-preview.png";
-import "./Online.css";
-import OnlineContent from "./OnlineContent";
-import two from "./blog-image.png";
+import location from "./location.png";
+import whatsapp from "./whatsapp.png";
+import mail from "./mail.png";
+import contact from "./contact.png";
+import "./Contact.css";
+import { useState } from "react";
 
 const Contact = () => {
+  const [data, setData] = useState({
+    fullname: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (event) => {
+    setData({
+      ...data,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(data);
+    setData({
+      fullname: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+  };
+
   return (
     <div className="">
       <div className="text-center bg-purple-200 pt-[40px] pb-[40px]">
-        <p className="text-[40px] font-sans font-bold">Services</p>
-        <p className="font-sans text-[20px]">
-          Home / Services / {main_con?.heading_main_con}
-        </p>
+        <p className="text-[40px] font-sans font-bold">Contact Us</p>
+        <p className="font-sans text-[20px]">Home / Services</p>
       </div>
 
-      <div className="left_grid pl-[40px] pr-[40px] pt-[70px]">
-        <div className="online_left">
-          <div className="mb-[10px]">
-            <p className="font-sans font-bold text-[20px]">
-              {main_con?.heading_main_con}
-            </p>
-            <p className="flex">
-              <span>
-                <img src={one} className="h-[40px] rounded-2xl " />
-              </span>
-              <p className="m-[10px] text-center text-lg font-sans">
-                By Chinmoy Mohan | Published on November 14,2023 | 2min read
-              </p>
-            </p>
-          </div>
-          <div className="services_content ">
-            <img src={two} className="mb-[10px]" />
-            {main_con?.con?.map((item, index) => {
-              return <p className="text-justify ">{item}</p>;
-            })}
-
-            {content_ser?.map((item, index) => {
-              if (item?.ser_heading) {
-                return (
-                  <>
-                    <div>
-                      <h3 className="font-sans font-bold ser_heading">
-                        {item?.ser_heading}
-                      </h3>
-                      {item?.ser_par?.map((subitem) => {
-                        return (
-                          <div className="my-[10px]">
-                            <p className="font-sans text-justify">{subitem}</p>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </>
-                );
-              } else {
-                return (
-                  <div>
-                    <h3 className="font-sans font-bold ser_heading">
-                      {item?.ser_sub_heading}
-                    </h3>
-                    <p className="text-justify">{item?.ser_sub_content}</p>
-                    <h3 className="font-sans font-bold ser_heading text-justify">
-                      {item?.ser_sub_main_heading}
-                    </h3>
-                    {item?.sub_section?.map((it, i) => {
-                      return (
-                        <>
-                          <h3 className="font-sans font-bold  ser_heading">
-                            {it?.sub_section_heading}
-                          </h3>
-                          {it?.sub_section_content?.map((sub_mul_con, ind) => {
-                            return (
-                              <div className="my-[10px]">
-                                <p className="font-sans text-justify">
-                                  {sub_mul_con}
-                                </p>
-                              </div>
-                            );
-                          })}
-                        </>
-                      );
-                    })}
-                  </div>
-                );
-              }
-            })}
-          </div>
-        </div>
-        <div className="online_right">
-          <h1 className="font-sans font-bold text-[17px]">RELATED SERVICES</h1>
-
-          <div className="mt-[18px]  p-[20px]">
-            {rel_services?.map((item, index) => {
-              return (
-                <div className="flex gap-10 border-b-4 border-purple-300 my-[20px] pb-[20px]">
-                  <img src={item?.img} className="h-[140px] w-[150px]" />
-                  <div className="">
-                    <p className="font-sans font-bold text-purple-900">
-                      {item?.date}
-                    </p>
-                    <a href="#" className="font-sans font-bold">
-                      {item?.content}
-                    </a>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-          <div className="">
-            {ser_card?.map((item, index) => {
-              if (item?.card_con) {
-                return (
-                  <div className="bg-purple-300 p-[20px] rounded-2xl mb-[20px]">
-                    <p className="my-[10px]">{item?.card_con}</p>
-                    <button className="h-[50px] w-[300px] bg-purple-500 text-white text-2xl font-sans text-center rounded">
-                      {item?.btn_con}
-                    </button>
-                  </div>
-                );
-              }
-            })}
-          </div>
-        </div>
-      </div>
-
-      <div className="my-[20px]">
-        <div className="bg-purple-300 p-[40px]  mb-[20px] grid grid-cols-2 ">
-          <p className="text-center font-sens text-[25px] font-bold">
-            Don't miss this opportunity to enhance your skills and confidence,
-            take free mock tests now!
+      <div className="grid pl-[40px] pr-[40px] pt-[70px]">
+        <div className="Contact_left px-[20px]">
+          <h1 className="font-bold font-san mb-[30px]">
+            <span className="main_heading">Contact Info</span>
+            <div className="h-[3px] w-[60px] bg-purple-500"></div>
+          </h1>
+          <p className="font-sans text-balance flex gap-[10px] mt-[10px] mb-[30px] sub_para">
+            We're here to assist you on your educational journey. Have
+            questions, feedback, or need support? Feel free to reach out to us.
+            Our dedicated team is ready to help.
           </p>
-          <button className="h-[50px] w-[200px] bg-purple-800 text-white text-2xl font-sans text-center rounded m-auto">
-            Take Free Test
-          </button>
+
+          <p className="font-sans text-balance flex gap-[10px] mt-[10px] mb-[30px]">
+            <img src={location} className="h-[25px] mt-[10px]" />
+            <p className="font-sans sub_para">
+              Brahmaputra Exam Success Support Team Private Limited, 37, 2nd
+              by-lane, B. R. Mazumdar Path, Baghorbori, Panjabari,
+              Guwahati-781037, Assam
+            </p>
+          </p>
+          <a
+            href="#"
+            className="font-sans text-balance flex gap-[10px] mb-[30px]"
+          >
+            <img src={whatsapp} className="h-[25px] " />
+            <p className="font-sans sub_para">
+              <span>8822403212</span>
+            </p>
+          </a>
+
+          <a
+            href="#"
+            className="font-sans text-balance flex gap-[10px] mb-[30px]"
+          >
+            <img src={mail} className="h-[25px] " />
+            <p className="font-sans sub_para">
+              <span>info@besst.in</span>
+            </p>
+          </a>
+          <a
+            href="#"
+            className="font-sans text-balance flex gap-[10px] mb-[30px]"
+          >
+            <img src={contact} className="h-[25px] " />
+            <p className="font-sans text-bold sub_para">
+              <span>9365834467</span>
+            </p>
+          </a>
         </div>
+        <div className="Contact_right">
+          <h1 className="font-sans font-bold">
+            <span className="main_heading">Get In Touch</span>
+            <div className="h-[3px] w-[60px] bg-purple-500"></div>
+          </h1>
+
+          <form onSubmit={handleSubmit} className="mt-[40px]">
+            <div className=" flex gap-[20px]">
+              <input
+                type="text"
+                name="fullname"
+                placeholder="Full Name"
+                className="w-[300px]"
+                value={data.fullname}
+                onChange={handleChange}
+              />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                className="w-[300px]"
+                value={data.email}
+                onChange={handleChange}
+              />
+            </div>
+            <input
+              type="text"
+              name="subject"
+              className="w-[620px] my-[40px]"
+              value={data.subject}
+              onChange={handleChange}
+              placeholder="Subject"
+            />
+            <textarea
+              className="w-[620px] h-[100px] p-[20px] border-2 border-purple-300 rounded"
+              placeholder="Message"
+              name="message"
+              value={data.message}
+              onChange={handleChange}
+            ></textarea>
+            <button className="Submit w-[230px] h-[80px] text-center bg-purple-600 rounded font-bold text-white text-2xl text-sans">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+      <div className="my-[20px]" data-wow-delay="0.15">
+        <iframe
+          title="Map"
+          className="position relative rounded w-100 h-100"
+          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7163.665236548642!2d91.824!3d26.137!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1722322210670!5m2!1sen!2sin"
+          // width="600"
+          // height="450"
+          style={{ minHeight: "350px", border: "0" }}
+          allowfullscreen=""
+          aria-hidden="false"
+          // loading="lazy"
+          // referrerpolicy="no-referrer-when-downgrade"
+          tabIndex="0"
+        ></iframe>
       </div>
     </div>
   );
 };
 
-export default Online;
+export default Contact;

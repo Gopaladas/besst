@@ -11,6 +11,8 @@ import Service_mock from "./online/Mock";
 import Service_download from "./online/Study";
 import Service_previous from "./online/Previous";
 import Service_councselling from "./online/counseling";
+import Contact from "./Contact/Contact";
+
 function App() {
   return (
     <div>
@@ -25,6 +27,7 @@ function App() {
         <Route path="/Service_download" element={<Service_download />} />
         <Route path="/Service_previous" element={<Service_previous />} />
         <Route path="/Service_counselling" element={<Service_councselling />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>
