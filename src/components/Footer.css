@@ -97,7 +97,7 @@
 	}
 
 	.image_dis{
-		margin-bottom: 22px;
+		margin-bottom: 0px;
 	}
 	
 	 .row{
@@ -110,7 +110,7 @@
 		grid-template-columns: repeat(1,1fr);
 	 }
 	 .services-space{
-		margin-left:10px;
+		margin-left:5px;
 	 }
 
   }
