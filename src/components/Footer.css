@@ -63,11 +63,11 @@
 	text-transform: capitalize;
 	color: #ffffff;
 	text-decoration: none;
-	font-weight: ;
+	/* font-weight: ; */
 	color: #bbbbbb;
 	/* display: block; */
 	transition: all 0.3s ease;
-	margin-left: -30px;
+	/* margin-left: -30px; */
   }
   
   .footer-col ul li a:hover {

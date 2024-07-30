@@ -18,7 +18,7 @@ const StudyContent = () => {
     {
       img: three,
       date: "NOVEMBER 14, 2023",
-      content: "Optimize Your Preparation:Practice CUET Mock Tests with Us",
+      content: "Optimize Your Preparation :Practice CUET Mock Tests with Us",
     },
     {
       img: three,

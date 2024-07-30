@@ -46,30 +46,30 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="#">
-                    <img
+                    <p className="flex"><img
                       src="https://res.cloudinary.com/dxyzgyveu/image/upload/v1722224207/srinivas_dryczu.png"
-                      style={{ height: "15px", marginBottom: "5px" }}
+                      style={{ height: "15px", marginBottom: "" }} className="mt-[6px]"
                     />
-                    Location
+                    <div>Location</div></p>
                   </a>
                 </li>
-                <li>
-                  <a href="#">Brahmaputra Exam Success</a>
+                <li style={{color:"#bbbbbb"}}>
+                  Brahmaputra Exam Success
                 </li>
                 <li>
-                  <a href="#">Support Team Private</a>
+                  <a style={{color:"#bbbbbb"}}>Support Team Private</a>
                 </li>
                 <li>
-                  <a href="#">Limited, 37, 2nd bye lane</a>
+                  <a style={{color:"#bbbbbb"}}>Limited, 37, 2nd bye lane</a>
                 </li>
                 <li>
-                  <a href="#">B.R.Mazumdar Path Baghorbori,</a>
+                  <a style={{color:"#bbbbbb"}}>B.R.Mazumdar Path Baghorbori,</a>
                 </li>
                 <li>
-                  <a href="#">Panjabari Guwahati-781037</a>
+                  <a style={{color:"#bbbbbb"}}>Panjabari Guwahati-781037</a>
                 </li>
                 <li>
-                  <a href="#">Assam</a>
+                  <a style={{color:"#bbbbbb"}}>Assam</a>
                 </li>
               </ul>
             </div>
@@ -77,13 +77,16 @@ const Footer = () => {
               <h4>ABOUT US</h4>
               <ul>
                 <li>
-                  <a href="#">About us</a>
+                  <a href="/About">About us</a>
                 </li>
                 <li>
-                  <a href="#">Cookie Policy</a>
+                  <a href="/Cookie">Cookie Policy</a>
                 </li>
                 <li>
-                  <a href="#">Terms of Service</a>
+                  <a href="/Privacy">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="/Terms">Terms of Service</a>
                 </li>
                 <li>
                   <a href="/Contact">Write to Us?</a>
@@ -155,7 +158,7 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div className="footer-col services-space">
+              <div className="footer-col services-space mt-[20px]">
                 <h4>Get Our Mobile App</h4>
                 <div className="sub_image">
                   <div>

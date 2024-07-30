@@ -80,6 +80,16 @@ const MainPage = () => {
                 Complete Guidance for Admission Process of Delhi University
               </NavDropdown.Item>
             </NavDropdown>
+
+            <Nav.Link
+              href="view.php"
+              className="nav-link blogs mb-[22px]"
+              style={{ fontWeight: "bold", fontSize: "20px", color: "#666" }}
+              
+            >
+              Blogs
+            </Nav.Link>
+
             <div className="" style={{ display: "flex" }}>
               <Nav.Link
                 href="placed.php"
@@ -96,17 +106,11 @@ const MainPage = () => {
               </Button>
             </div>
 
-            <Nav.Link
-              href="view.php"
-              className="nav-link blogs"
-              style={{ fontWeight: "bold", fontSize: "20px", color: "#666" }}
-            >
-              Blogs
-            </Nav.Link>
+            
             <Form inline className="signbtn">
               <Button variant="outline-primary">
                 <a
-                  href="index.php"
+                  href="/Signin"
                   style={{
                     textDecoration: "none",
                     color: "rgb(150, 35, 150)",

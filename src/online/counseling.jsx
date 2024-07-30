@@ -16,8 +16,9 @@ const CounselingContent = () => {
   const rel_services = [
     {
       img: three,
-      date: "NOVEMBER 14, 2023",
-      content: "Optimize Your Preparation:Practice CUET Mock Tests with Us",
+      date: "NOVEMBER 14  , 2023",
+      content: 
+      "Optimize Your Preparation   :Practice CUET Mock Tests with Us",
     },
     {
       img: three,

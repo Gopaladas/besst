@@ -48,7 +48,7 @@ const Cuet_ncert = () => {
         <div className='cuet-ug-section'>
         <h3 className="cuet-ug-heading">Currently, No Subscription Pack is Available Please Check Later.</h3>
         </div>
-        <div>
+        <div className='ml-[40px]'>
             <h3 className="cuet-ug-heading">This course included :</h3>
             <ul className='cuet-ug-course-list'>
                 <li><img className='cuet-ug-tick' src={tick} alt="" />Subject wise practice papers</li>

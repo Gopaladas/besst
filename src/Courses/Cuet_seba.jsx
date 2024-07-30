@@ -67,7 +67,7 @@ const Cuet_seba = () => {
                 <span className="subject subject-social-science">Social Science</span>  
                 <span className=" subject-maths">Maths</span>)
             </h4>
-            <ul className="cuet-ug-subheading subjects-list">
+            <ul className="cuet-ug-subheading subjects-list p-[50px]">
   <li>50% of the questions (i.e. 45 questions) will be objective-type questions</li>
   <li>With the remaining 50% consisting of an internal assessment of 10 marks and a mix of objective type questions.</li>
 </ul>
@@ -109,7 +109,7 @@ const Cuet_seba = () => {
         </div>
       </div>
     </div>
-        <div>
+        <div className='ml-[40px]'>
             <h3 className="cuet-ug-heading">This course included :</h3>
             <ul className='cuet-ug-course-list'>
                 <li><img className='cuet-ug-tick' src={tick} alt="" />Subject wise practice papers</li>

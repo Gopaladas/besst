@@ -93,10 +93,10 @@ const Online = ({ main_con, rel_services, ser_card, content_ser }) => {
         <div className="online_right">
           <h1 className="font-sans font-bold text-[17px]">RELATED SERVICES</h1>
 
-          <div className="mt-[18px]  p-[20px]">
+          <div className="mt-[18px]  p-[20px] bg-blue-300 rel_ser">
             {rel_services?.map((item, index) => {
               return (
-                <div className="flex gap-10 border-b-4 border-purple-300 my-[20px] pb-[20px]">
+                <div className="flex gap-10 border-b-4 border-purple-300 my-[20px] pb-[20px] sub_rel_ser">
                   <img src={item?.img} className="h-[140px] w-[150px]" />
                   <div className="">
                     <p className="font-sans font-bold text-purple-900">
@@ -129,7 +129,7 @@ const Online = ({ main_con, rel_services, ser_card, content_ser }) => {
       </div>
 
       <div className="my-[20px]">
-        <div className="bg-purple-300 p-[40px]  mb-[20px] grid grid-cols-2 ">
+        <div className="bg-purple-300 p-[40px]  mb-[20px]  sub_grid">
           <p className="text-center font-sens text-[25px] font-bold">
             Don't miss this opportunity to enhance your skills and confidence,
             take free mock tests now!

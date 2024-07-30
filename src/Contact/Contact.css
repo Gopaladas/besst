@@ -37,8 +37,25 @@ input[type="text"],
   border-radius: 7px;
 }
 
+.sub_input{
+  width: 595px;
+}
+
+
+.main_input{
+  width:300px;
+}
+
 @media (max-width: 768px) {
-  .left_grid {
+  .grid {
     grid-template-columns: 100%;
+  }
+
+  .sub_input{
+    width:300px;
+  }
+
+  .main_input{
+    width: 150px;
   }
 }

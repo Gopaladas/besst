@@ -41,8 +41,8 @@ const Cuet_UG = () => {
             <h3 className="cuet-ug-heading">Choice of Test Paper</h3>
             <p className="cuet-ug-subheading">Maximum 06 Test papers (04 or 05 domain subjects including General Test and 01 or 02 languages).</p>
             <h3 className="cuet-ug-heading">Medium of Question Paper</h3>
-            <p className="cuet-ug-subheading">The tests (other than "language" test) are offered in 13 languages.</p>
-            <ul>
+            <p className="cuet-ug-subheading ">The tests (other than "language" test) are offered in 13 languages.</p>
+            <ul className='ml-[50px]'>
                 <li>Assamese</li>
                 <li>Bengali</li>
                 <li>English</li>
@@ -101,7 +101,7 @@ const Cuet_UG = () => {
             <p className='cuet-ug-subheading'>Unlock boundless knowledge from the comfort of your home with our online classes subscription – where learning knows no limits!</p>
             <button className='cuet-ug-btn'>CUET Online Subscription</button>
         </div>
-        <div>
+        <div className='ml-[40px]'>
             <h3 className="cuet-ug-heading">This course included :</h3>
             <ul className='cuet-ug-course-list'>
                 <li><img className='cuet-ug-tick' src={tick} alt="" />Subject wise practice paper</li>

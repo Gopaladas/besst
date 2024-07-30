@@ -103,7 +103,7 @@ const Cuet_PG = () => {
             <p className='cuet-ug-subheading'>Unlock boundless knowledge from the comfort of your home with our online classes subscription – where learning knows no limits!</p>
             <button className='cuet-ug-btn'>CUET Online Subscription</button>
         </div>
-        <div>
+        <div className='ml-[40px]'>
             <h3 className="cuet-ug-heading">This course included :</h3>
             <ul className='cuet-ug-course-list'>
                 <li><img className='cuet-ug-tick' src={tick} alt="" />Subject wise practice paper</li>

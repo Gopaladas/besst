@@ -2,7 +2,7 @@ import React from 'react';
 import './Cookie.css';
 
 const ShadowBox = ({ heading, content }) => (
-    <div className='cookie_container'>
+    <div className='cookie_container mt-[-40px]'>
   <div className="shadow-box-container">
     <h2 className="shadow-box-heading" style={{fontSize:'20px',fontWeight:'bold'}}>COOKIE POLICY</h2>
     <h4 style={{color:'black',fontSize:'20px',fontWeight:'bold'}}>Cookie policy for Brahmaputra Exam Success</h4>

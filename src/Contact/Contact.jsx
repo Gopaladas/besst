@@ -99,7 +99,7 @@ const Contact = () => {
                 type="text"
                 name="fullname"
                 placeholder="Full Name"
-                className="w-[300px]"
+                className=" main_input"
                 value={data.fullname}
                 onChange={handleChange}
               />
@@ -108,7 +108,7 @@ const Contact = () => {
                 type="email"
                 name="email"
                 placeholder="Email"
-                className="w-[300px]"
+                className=" main_input"
                 value={data.email}
                 onChange={handleChange}
               />
@@ -116,13 +116,13 @@ const Contact = () => {
             <input
               type="text"
               name="subject"
-              className="w-[620px] my-[40px]"
+              className=" my-[40px] sub_input"
               value={data.subject}
               onChange={handleChange}
               placeholder="Subject"
             />
             <textarea
-              className="w-[620px] h-[100px] p-[20px] border-2 border-purple-300 rounded"
+              className=" h-[100px] p-[20px] border-2 border-purple-300 rounded sub_input"
               placeholder="Message"
               name="message"
               value={data.message}
